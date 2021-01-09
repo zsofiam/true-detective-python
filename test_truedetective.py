@@ -1,5 +1,5 @@
 from truedetective import *
-
+import pytest
 
 def test_is_twodigit_odd():
     assert is_twodigit_odd(5) is False
@@ -62,7 +62,3 @@ def test_should_take_a_nap():
     assert should_take_a_nap(True, False, False, True, True, False, False) is False
     assert should_take_a_nap(True, False, False, True, False, False, True) is True
     assert should_take_a_nap(True, False, False, True, False, True, True) is True
-
-
-if __name__ == "__main__":
-    print(test_is_twodigit_odd())
